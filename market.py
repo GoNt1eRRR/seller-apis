@@ -156,12 +156,12 @@ def create_stocks(watch_remnants, offer_ids, warehouse_id):
     Сформировать список остатков.
 
     Args:
-        watch_remnants (list): Список содезжащий информацию об остатках часов.
+        watch_remnants (list): Список содержащий информацию об остатках часов.
         offer_ids (str): Список содержащий артикулы товаров.
         warehouse_id (str): id склада.
 
     Returns:
-        list: Список содезжащий обновленную информацию об остатках часов.
+        list: Список содержащий обновленную информацию об остатках часов.
 
     Examples:
         >>> create_stocks([{"Код": "123", "Количество": ">10"}], ["123"], "warehouse123")

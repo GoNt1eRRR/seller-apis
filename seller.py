@@ -188,7 +188,7 @@ def create_stocks(watch_remnants, offer_ids):
         offer_ids (list): Список артикулов товаров выставленных на Озон.
 
     Returns:
-        list: Список содезжащий обновленную информацию об остатках часов.
+        list: Список содержащий обновленную информацию об остатках часов.
 
     Example:
         >>> watch_remnants = [
@@ -298,7 +298,7 @@ def divide(lst: list, n: int):
         [[1, 2], [3, 4]]
 
     Raises:
-        ValueError: Если n отрицательно число или равна нулю.
+        ValueError: Если n отрицательное число или равна нулю.
     """
     for i in range(0, len(lst), n):
         yield lst[i : i + n]
@@ -306,12 +306,12 @@ def divide(lst: list, n: int):
 
 async def upload_prices(watch_remnants, client_id, seller_token):
     """
-    Асинхронно загружает данные о ценах на товары на площадку Ozon.
+    Асинхронно загружает данные о ценах на товары на площадку Озон.
 
     Args:
         watch_remnants (list): Список с остатками.
-        client_id (str): Идентификатор клиента на Ozon.
-        seller_token (str): Токен продавца для API Ozon.
+        client_id (str): Идентификатор клиента на Озон.
+        seller_token (str): Токен продавца для API Озон.
 
     Returns:
         list: Список обновленных цен, которые будут загружены на площадку.
@@ -325,12 +325,12 @@ async def upload_prices(watch_remnants, client_id, seller_token):
 
 async def upload_stocks(watch_remnants, client_id, seller_token):
     """
-    Асинхронно загружает данные об остатках на товары на площадку Ozon.
+    Асинхронно загружает данные об остатках на товары на площадку Озон.
 
     Args:
         watch_remnants (list): Список с остатками.
-        client_id (str): Идентификатор клиента на Ozon.
-        seller_token (str): Токен продавца для API Ozon.
+        client_id (str): Идентификатор клиента на Озон.
+        seller_token (str): Токен продавца для API Озон.
 
     Returns:
         not_empty (list): Список отфильтрованных оставшихся товаров с количеством, которое не равно нулу.
